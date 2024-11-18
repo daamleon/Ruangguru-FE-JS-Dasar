@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Portal - Admin Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="admin"">
+         <h3>Student Portal</h3>
+    <h3>Admin</h3>
+    <div>
+      <img
+        src="./assets/admin.png"
+        alt="Admin Photo"
+        id="admin-photo"
+        width="150"
+        height="150"
+      />
+    </div>
+    </div>
+   
+    <!-- Form Section -->
+    <form id="form-student">
+      <div>
+        <label for="input-name">Fullname</label>
+        <input type="text" id="input-name" name="fullname" />
+      </div>
+      <div>
+        <label for="input-date">Birth Date</label>
+        <input type="date" id="input-date" name="birthdate" />
+      </div>
+      <div>
+        <label for="input-gender">Gender</label>
+        <select id="input-gender" name="gender">
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+      </div>
+      <div>
+        <label for="input-prody">Program Study</label>
+        <select id="input-prody" name="program_study">
+          <option value="Ekonomi">Ekonomi</option>
+          <option value="Manajemen">Manajemen</option>
+          <option value="Akuntansi">Akuntansi</option>
+          <option value="Administrasi Publik">Administrasi Publik</option>
+          <option value="Administrasi Bisnis">Administrasi Bisnis</option>
+          <option value="Hubungan Internasional">Hubungan Internasional</option>
+          <option value="Teknik Sipil">Teknik Sipil</option>
+          <option value="Arsitektur">Arsitektur</option>
+          <option value="Matematika">Matematika</option>
+          <option value="Fisika">Fisika</option>
+          <option value="Informatika">Informatika</option>
+        </select>
+      </div>
+      <div>
+        <input type="submit" value="Add student" id="add-btn" />
+      </div>
+    </form>
+
+    <!-- Table Section -->
+    <table id="table-student" border="1">
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Full Name</th>
+          <th>Birth Date</th>
+          <th>Gender</th>
+          <th>Student ID</th>
+          <th>Faculty</th>
+          <th>Program Study</th>
+          <th>Option</th>
+        </tr>
+      </thead>
+      <tbody id="student-data">
+        <!-- Dummy Data -->
+        <tr>
+          <td>1</td>
+          <td>John Doe</td>
+          <td>2000-01-01</td>
+          <td>Male</td>
+          <td>123456</td>
+          <td>Faculty of Economics</td>
+          <td>Ekonomi</td>
+          <td><button type="button" class="delete-btn">Delete</button></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>John Doe</td>
+          <td>2000-01-01</td>
+          <td>Male</td>
+          <td>123456</td>
+          <td>Faculty of Economics</td>
+          <td>Ekonomi</td>
+          <td><button type="button" class="delete-btn">Delete</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
